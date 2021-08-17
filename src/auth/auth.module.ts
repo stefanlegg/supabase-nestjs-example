@@ -9,7 +9,7 @@ import { SupabaseStrategy } from './strategies/supabase.strategy';
 import { SupabaseModule } from '../supabase/supabase.module';
 
 @Module({
-  imports: [ConfigModule.forRoot(), SupabaseModule],
+  imports: [ConfigModule, SupabaseModule],
   controllers: [AuthController],
   providers: [
     AuthService,
