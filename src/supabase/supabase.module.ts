@@ -5,5 +5,6 @@ import { SupabaseService } from './supabase.service';
 @Module({
   imports: [ConfigModule.forRoot()],
   providers: [SupabaseService],
+  exports: [SupabaseService],
 })
 export class SupabaseModule {}
